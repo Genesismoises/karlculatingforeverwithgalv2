@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Galilee & Karl</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music/wedding-music.mp3" type="audio/mpeg" />
+  </audio>
+  <button class="music-btn" id="musicBtn" title="Play music" aria-label="Toggle music">
+    <span class="music-icon">♫</span>
+    <span class="music-ripple"></span>
+  </button>
+
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">K <span>&</span> G</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="gifts.html">Gifts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="assets/images/gallery/engagement-04.jpg" alt="Galilee and Karl" class="page-hero-img" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <p class="eyebrow light">Prenuptial Photos</p>
+      <h1>Our Gallery</h1>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Captured Moments</p>
+        <h2>Before the Big Day</h2>
+        <div class="header-line"></div>
+        <p class="section-subtitle">A glimpse of us, together, before forever.</p>
+      </div>
+
+      <div class="gallery-grid">
+         <div class="gallery-item tall reveal delay-1">
+        <img src="assets/images/gallery/engagement-01.jpg" alt="Engagement" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item reveal delay-2">
+        <img src="assets/images/gallery/engagement-02.jpg" alt="Engagement" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item reveal delay-3">
+        <img src="assets/images/gallery/engagement-03.jpg" alt="Engagement" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item wide reveal delay-1">
+        <img src="assets/images/gallery/engagement-04.jpg" alt="The Proposal" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <!-- PRENUP -->
+      <div class="gallery-item reveal delay-2">
+        <img src="assets/images/gallery/prenup-01.jpg" alt="Prenup photo 1" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item tall reveal delay-1">
+        <img src="assets/images/gallery/prenup-02.jpg" alt="Prenup photo 2" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item reveal delay-2">
+        <img src="assets/images/gallery/prenup-03.jpg" alt="Prenup photo 3" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item reveal delay-3">
+        <img src="assets/images/gallery/prenup-04.jpg" alt="Prenup photo 4" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item wide reveal delay-2">
+        <img src="assets/images/gallery/prenup-05.jpg" alt="Prenup photo 5" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item reveal delay-1">
+        <img src="assets/images/gallery/prenup-06.jpg" alt="Prenup photo 6" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <!-- MOMENTS -->
+      <div class="gallery-item wide reveal delay-2">
+        <img src="assets/images/gallery/moments-01.jpg" alt="Our Moments" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item reveal delay-3">
+        <img src="assets/images/gallery/moments-02.jpg" alt="Our Moments" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item tall reveal delay-1">
+        <img src="assets/images/gallery/moments-03.jpg" alt="Our Moments" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item reveal delay-2">
+        <img src="assets/images/gallery/moments-04.jpg" alt="Our Moments" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      <div class="gallery-item reveal delay-3">
+        <img src="assets/images/gallery/moments-05.jpg" alt="Our Moments" loading="lazy" />
+        <div class="gallery-overlay"><span>✦</span></div>
+      </div>
+
+      
+
+     
+      </div>
+      
+    </div>
+
+    <!--Prenup Video-->
+    <section class="video-section">
+
+      <div class="welcome-video-frame">
+        <iframe
+          src="https://drive.google.com/file/d/1ddv6TWWRCSxMzHQ71fCNM4O3UsVhwiZx/preview"
+          allow="autoplay"
+          allowfullscreen
+          style="position:absolute;inset:0;width:100%;height:100%;border:none;">
+        </iframe>
+      </div>
+
+    </section>
+
+
+  </section>
+
+    
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lightboxClose">✕</button>
+    <button class="lb-prev" id="lightboxPrev">‹</button>
+    <button class="lb-next" id="lightboxNext">›</button>
+    <img id="lightboxImg" src="" alt="Gallery photo" />
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-names">Karl <span>&amp;</span> Galilee</p>
+      <p class="footer-date">May 14, 2026 · Tagaytay, Cavite</p>
+      <div class="footer-divider">✦</div>
+      <div class="footer-links">
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">Made with love &hearts; for our special day</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

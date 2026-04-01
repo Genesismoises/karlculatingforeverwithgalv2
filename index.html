@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karl & Galilee — May 14, 2026</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== MUSIC ===== -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music/wedding-music.mp3" type="audio/mpeg" />
+  </audio>
+  <button class="music-btn" id="musicBtn" title="Play music" aria-label="Toggle music">
+    <span class="music-icon">♫</span>
+    <span class="music-ripple"></span>
+  </button>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">K <span>&</span> G</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="gifts.html">Gifts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-photo-wrap">
+      <img src="assets/images/cover/main-cover.jpg" alt="" class="hero-photo" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Floating petals canvas -->
+    <canvas class="petals-canvas" id="petalsCanvas"></canvas>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">#KarlculatingforeverwithGal</p>
+      <h1 class="hero-names reveal-up delay-1">
+        <span class="name-left">Karl</span>
+        <span class="hero-amp">&amp;</span>
+        <span class="name-right">Galilee</span>
+      </h1>
+      <div class="hero-divider reveal-up delay-2">
+        <span class="hero-divider-line"></span>
+        <span class="hero-divider-icon">✦</span>
+        <span class="hero-divider-line"></span>
+      </div>
+      <p class="hero-date reveal-up delay-3">Thursday · May 14, 2026 · 1:00 PM</p>
+      <p class="hero-venue reveal-up delay-4">Our Lady of Lourdes · Tagaytay City, Cavite</p>
+
+      <!-- Countdown -->
+      <div class="countdown reveal-up delay-5">
+        <div class="countdown-item"><span class="countdown-num" id="cd-days">00</span><span class="countdown-label">Days</span></div>
+        <div class="countdown-dot">:</div>
+        <div class="countdown-item"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-label">Hours</span></div>
+        <div class="countdown-dot">:</div>
+        <div class="countdown-item"><span class="countdown-num" id="cd-mins">00</span><span class="countdown-label">Minutes</span></div>
+        <div class="countdown-dot">:</div>
+        <div class="countdown-item"><span class="countdown-num" id="cd-secs">00</span><span class="countdown-label">Seconds</span></div>
+      </div>
+
+      <a href="#event" class="hero-scroll-btn reveal-up delay-6">
+        <span>Scroll Down</span>
+        <span class="hero-scroll-arrow">↓</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== EVENT DETAILS ===== -->
+  <section class="event-section" id="event">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">The Celebration</p>
+        <h2>Save the Date</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="event-cards">
+        <!-- Ceremony -->
+        <div class="event-card reveal delay-1">
+          <div class="event-card-icon">⛪</div>
+          <p class="event-card-tag">Ceremony</p>
+          <h3>Our Lady of Lourdes</h3>
+          <div class="event-detail"><span class="detail-icon">📅</span> Thursday, May 14, 2026</div>
+          <div class="event-detail"><span class="detail-icon">🕐</span> 1:00 PM</div>
+          <div class="event-detail"><span class="detail-icon">📍</span> Tagaytay City, Cavite</div>
+          <a href="https://maps.google.com/?q=Our+Lady+of+Lourdes+Tagaytay" target="_blank" class="event-map-btn">View on Map →</a>
+        </div>
+
+        <!-- Reception -->
+        <div class="event-card reveal delay-2">
+          <div class="event-card-icon">🥂</div>
+          <p class="event-card-tag">Reception</p>
+          <h3>Lazuri Hotels and Resorts Tagaytay</h3>
+          <div class="event-detail"><span class="detail-icon">📅</span> Thursday, May 14, 2026</div>
+          <div class="event-detail"><span class="detail-icon">🕓</span> Cocktail: 5:00 PM · Dinner & Dancing: 6:00 PM</div>
+          <div class="event-detail"><span class="detail-icon">📍</span> Brgy, Tagaytay - Nasugbu Hwy, Tagaytay City, 4120 Cavite</div>
+          <a href="https://maps.google.com/?q=Lazuri+Hotels+and+Resorts+Tagaytay" target="_blank" class="event-map-btn">View on Map →</a>
+        </div>
+
+        <!-- Attire -->
+        <div class="event-card reveal delay-3">
+          <div class="event-card-icon">👗</div>
+          <p class="event-card-tag">Dress Code</p>
+          <h3>Formal Attire</h3>
+          <div class="attire-chips">
+            <div class="attire-chip">
+              <div class="chip-swatch" style="background:#2D3A4A"></div>
+              <span>Midnight Navy</span>
+            </div>
+            <div class="attire-chip">
+              <div class="chip-swatch" style="background:#B07D62"></div>
+              <span>Terracotta</span>
+            </div>
+            <div class="attire-chip">
+              <div class="chip-swatch" style="background:#C2B5A0"></div>
+              <span>Champagne</span>
+            </div>
+            <div class="attire-chip">
+              <div class="chip-swatch" style="background:#4A6741"></div>
+              <span>Forest Green</span>
+            </div>
+          </div>
+          <p class="attire-note">Please avoid wearing white, ivory, or red.</p>
+        </div>
+      </div>
+
+      <!-- Google Map Embed -->
+      <div class="map-embed reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8!2d121.0138!3d14.5547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90264a0e44d%3A0x1b58cae0e4e1a43!2sOur%20Lady%20of%20Lourdes!5e0!3m2!1sen!2sph!4v1"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Venue Map">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR STORY TEASER ===== -->
+  <section class="story-teaser">
+    <div class="story-teaser-inner">
+      <img src="assets/images/gallery/prenup-04.jpg" alt="How we met" class="story-teaser-img reveal" />
+      <div class="story-teaser-text reveal delay-2">
+        <p class="eyebrow">Our Story</p>
+        <h2>A Love Written in the Stars</h2>
+        <p>From a chance encounter to a lifetime of promises — every step of our journey has led us here. We can't wait to celebrate this new chapter with all of you.</p>
+        <a href="story.html" class="btn-outline">Read Our Story →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY TEASER ===== -->
+  <section class="gallery-teaser">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Captured Moments</p>
+        <h2>Our Gallery</h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="gallery-grid-teaser">
+        <div class="gallery-item reveal delay-1" data-index="0">
+          <img src="assets/images/gallery/prenup-01.jpg" alt="Prenup photo 1" />
+          <div class="gallery-overlay"><span>✦</span></div>
+        </div>
+        <div class="gallery-item reveal delay-2" data-index="1">
+          <img src="assets/images/gallery/prenup-02.jpg" alt="Prenup photo 2" />
+          <div class="gallery-overlay"><span>✦</span></div>
+        </div>
+        <div class="gallery-item reveal delay-3" data-index="2">
+          <img src="assets/images/gallery/prenup-03.jpg" alt="Prenup photo 3" />
+          <div class="gallery-overlay"><span>✦</span></div>
+        </div>
+        <div class="gallery-item reveal delay-4" data-index="3">
+          <img src="assets/images/gallery/prenup-04.jpg" alt="Prenup photo 4" />
+          <div class="gallery-overlay"><span>✦</span></div>
+        </div>
+      </div>
+      <div class="center-btn reveal">
+        <a href="gallery.html" class="btn-outline">View Gallery →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RSVP CTA ===== -->
+  <section class="rsvp-cta">
+    <div class="rsvp-cta-bg">
+      <img src="assets/images/cover/main-bottom.jpg" alt="" class="rsvp-cta-img" />
+      <div class="rsvp-cta-overlay"></div>
+    </div>
+    <div class="rsvp-cta-content reveal">
+      <p class="eyebrow lightx">Join Our Celebration</p>
+      <h2>Will You Be There?</h2>
+      <p>Your presence means the world to us. Please let us know by <strong>March 31, 2026</strong>.</p>
+      <a href="rsvp.html" class="btn-primary">RSVP Now</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-names">Karl <span>&amp;</span> Galilee</p>
+      <p class="footer-date">May 14, 2026 · Tagaytay, Cavite</p>
+      <div class="footer-divider">✦</div>
+      <div class="footer-links">
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">Made with love &hearts; for our special day</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lightboxClose">✕</button>
+    <button class="lb-prev" id="lightboxPrev">‹</button>
+    <button class="lb-next" id="lightboxNext">›</button>
+    <img id="lightboxImg" src="" alt="Gallery photo" />
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

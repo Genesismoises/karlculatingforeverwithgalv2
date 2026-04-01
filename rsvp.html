@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSVP — Karl & Galilee</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music/wedding-music.mp3" type="audio/mpeg" />
+  </audio>
+  <button class="music-btn" id="musicBtn" title="Play music" aria-label="Toggle music">
+    <span class="music-icon">♫</span>
+    <span class="music-ripple"></span>
+  </button>
+
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">K <span>&</span> G</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="rsvp.html" class="active">RSVP</a></li>
+      <li><a href="gifts.html">Gifts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="assets/images/cover/prenup-05.jpg" alt="Karl and Galilee" class="page-hero-img" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <p class="eyebrow light">You're Invited</p>
+      <h1>RSVP</h1>
+    </div>
+  </section>
+
+  <section class="rsvp-section">
+    <div class="container">
+      <div class="rsvp-wrap">
+        <div class="rsvp-info reveal">
+          <p class="eyebrow">Kindly Reply By</p>
+          <h2>March 31, 2026</h2>
+          <p>We can't wait to celebrate with you! Please let us know if you'll be able to join Karl & Galilee by filling out the form below. Your seat is waiting!</p>
+          <div class="rsvp-couple-photo">
+            <img src="assets/images/cover/couple.jpg" alt="Karl and Galilee" />
+          </div>
+        </div>
+
+        <div class="rsvp-form-wrap reveal delay-2">
+          <div class="rsvp-gform-embed">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe4_iQw64jfQd8qWcD2kJMqlaDysBOba1tWuQiOOxthaqo-rw/viewform?embedded=true"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="RSVP Form">
+              Loading…
+            </iframe>
+          </div>
+
+          <div class="rsvp-confirm" id="confirmationMsg">
+            <div class="confirm-icon">✦</div>
+            <h3>Thank You!</h3>
+            <p>Your RSVP has been received. We can't wait to see you on May 14!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-names">Karl <span>&amp;</span> Galilee</p>
+      <p class="footer-date">May 14, 2026 · Tagaytay, Cavite</p>
+      <div class="footer-divider">✦</div>
+      <div class="footer-links">
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">Made with love &hearts; for our special day</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

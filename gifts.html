@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gifts — Karl & Galilee</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music/wedding-music.mp3" type="audio/mpeg" />
+  </audio>
+  <button class="music-btn" id="musicBtn" title="Play music" aria-label="Toggle music">
+    <span class="music-icon">♫</span>
+    <span class="music-ripple"></span>
+  </button>
+
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">K <span>&</span> G</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="gifts.html" class="active">Gifts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="assets/images/cover/prenup-01.jpg" alt="Karl and Galilee" class="page-hero-img" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <p class="eyebrow light">With Gratitude</p>
+      <h1>Gift Registry</h1>
+    </div>
+  </section>
+
+  <section class="gifts-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">A Note From Us</p>
+        <h2>Your Presence is Our Gift</h2>
+        <div class="header-line"></div>
+        <p class="section-subtitle">We are truly grateful just to have you with us on this special day. However, if you wish to bless us, we humbly accept monetary gifts through any of the following.</p>
+      </div>
+
+      <div class="qr-grid">
+        <div class="qr-card reveal delay-1">
+          <div class="qr-logo gcash">GCash</div>
+          <div class="qr-image-wrap">
+            <img src="assets/images/qr-gcash.png" alt="GCash QR Code" />
+          </div>
+          <p class="qr-name">Galilee Baldonasa</p>
+          <p class="qr-number">+63 917 xxx xxxx</p>
+        </div>
+
+        <div class="qr-card reveal delay-2">
+          <div class="qr-logo maya">Maya</div>
+          <div class="qr-image-wrap">
+            <img src="assets/images/qr-maya.png" alt="Maya QR Code" />
+          </div>
+          <p class="qr-name">Galilee Baldonasa</p>
+          <p class="qr-number">+63 917 xxx xxxx</p>
+        </div>
+
+        <div class="qr-card reveal delay-3">
+          <div class="qr-logo bpi">BPI</div>
+          <div class="qr-image-wrap">
+            <img src="assets/images/qr-bpi.png" alt="BPI QR Code" />
+          </div>
+          <p class="qr-name">Galilee Baldonasa</p>
+          <p class="qr-number">Acct: xxxx xxxx xxxx</p>
+        </div>
+
+        <div class="qr-card reveal delay-4">
+          <div class="qr-logo maribank">Maribank</div>
+          <div class="qr-image-wrap">
+            <img src="assets/images/qr-maribank.png" alt="Maribank QR Code" />
+          </div>
+          <p class="qr-name">Galilee Baldonasa</p>
+          <p class="qr-number">Acct: xxxx xxxx xxxx</p>
+        </div>
+      </div>
+
+      <div class="gifts-note reveal">
+        <p>💛 Thank you from the bottom of our hearts. Your love and generosity means everything to us.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-names">Karl <span>&amp;</span> Galilee</p>
+      <p class="footer-date">May 14, 2026 · Tagaytay, Cavite</p>
+      <div class="footer-divider">✦</div>
+      <div class="footer-links">
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">Made with love &hearts; for our special day</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
