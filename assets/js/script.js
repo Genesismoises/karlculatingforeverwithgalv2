@@ -286,6 +286,8 @@ document.querySelectorAll('.faq-question').forEach(q => {
 });
 
 // ---- BACKGROUND MUSIC ----
+
+/*
 const musicBtn = document.getElementById('musicBtn');
 const bgMusic  = document.getElementById('bgMusic');
 
@@ -351,3 +353,76 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+*/
+
+
+
+// ---- BACKGROUND MUSIC ----
+const musicBtn = document.getElementById('musicBtn');
+const bgMusic = document.getElementById('bgMusic');
+
+// Load saved state (default: playing)
+let musicPlaying = localStorage.getItem('musicPlaying') !== 'false';
+
+// Restore saved time from previous page
+const savedTime = parseFloat(localStorage.getItem('musicTime') || '0');
+if (savedTime > 0) bgMusic.currentTime = savedTime;
+
+// Attempt autoplay on load
+// Attempt autoplay on load
+window.addEventListener('load', () => {
+  if (musicPlaying) {
+    bgMusic.muted = false;
+    bgMusic.play()
+      .then(() => updateButton(true))
+      .catch(() => {
+        // Autoplay blocked — wait for first interaction to start
+        bgMusic.muted = true;
+        updateButton(true); // Show as "playing" intent
+        document.addEventListener('click', function startOnInteraction(e) {
+          // Don't let the music button double-toggle
+          if (e.target === musicBtn) return;
+          bgMusic.muted = false;
+          bgMusic.play().then(() => updateButton(true));
+          document.removeEventListener('click', startOnInteraction);
+          window.removeEventListener('scroll', startOnInteraction);
+        });
+        window.addEventListener('scroll', function startOnInteraction(e) {
+          bgMusic.muted = false;
+          bgMusic.play().then(() => updateButton(true));
+          document.removeEventListener('click', startOnInteraction);
+          window.removeEventListener('scroll', startOnInteraction);
+        }, { once: true });
+      });
+  } else {
+    bgMusic.pause();
+    updateButton(false);
+  }
+});
+
+// Save time before navigating away
+window.addEventListener('beforeunload', () => {
+  localStorage.setItem('musicTime', bgMusic.currentTime);
+});
+
+// Toggle button — pause/resume
+musicBtn?.addEventListener('click', () => {
+  if (bgMusic.paused || bgMusic.muted) {
+    bgMusic.muted = false;
+    bgMusic.play();
+    musicPlaying = true;
+    updateButton(true);
+  } else {
+    bgMusic.pause();
+    musicPlaying = false;
+    updateButton(false);
+  }
+  localStorage.setItem('musicPlaying', musicPlaying);
+});
+
+function updateButton(isPlaying) {
+  if (!musicBtn) return;
+  musicBtn.textContent = isPlaying ? '♫' : '♪';
+  musicBtn.title = isPlaying ? 'Pause music' : 'Play music';
+}
