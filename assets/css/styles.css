@@ -311,6 +311,7 @@ p {
   cursor: pointer;
   padding: 6px;
   z-index: 1001;
+  background-color: transparent;
 }
 .nav-toggle span {
   display: block;
@@ -909,6 +910,10 @@ body.nav-open::after {
 }
 .rsvp-cta-content .btn-primary::after { background: var(--gold-light); }
 
+.private-invitation h2{
+    color: var(--gold);
+}
+
 /* ============================================================
    STORY PAGE — TIMELINE
    ============================================================ */
@@ -1497,6 +1502,500 @@ blockquote {
   color: rgba(247,242,236,0.2);
   letter-spacing: 0.05em;
 }
+
+
+/* ============================================================
+   ENTOURAGE PAGE
+   ============================================================ */
+.entourage-section {
+  padding: 5rem 0 4rem;
+  background: var(--white);
+}
+
+.entourage-block {
+  margin-bottom: 0;
+}
+
+.entourage-label {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.entourage-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.entourage-divider {
+  text-align: center;
+  color: var(--gold);
+  font-size: 1.2rem;
+  padding: 3.5rem 0;
+  opacity: 0.6;
+}
+
+/* Parents */
+.parents-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.parent-group {
+  text-align: center;
+}
+
+.parent-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.parent-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin-bottom: 0.4rem;
+  font-weight: 400;
+}
+
+.deceased {
+  color: var(--rose);
+  font-size: 0.9rem;
+}
+
+.parent-divider {
+  color: var(--gold);
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+
+/* Principal Sponsors */
+.sponsors-columns {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sponsor-col-divider {
+  background: var(--ivory-dark);
+  width: 1px;
+}
+
+.sponsor-col-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sponsor-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sponsor-list li {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.96rem;
+  color: var(--text-mid);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Secondary Sponsors */
+.secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.secondary-card {
+  background: var(--ivory);
+  border: 1px solid var(--ivory-dark);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: var(--trans);
+}
+
+.secondary-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.secondary-role-symbol {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.secondary-role {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.secondary-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.98rem;
+  color: var(--text-dark);
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+/* Bridal Party */
+.bridal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bridal-divider {
+  background: var(--ivory-dark);
+}
+
+.bridal-side-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bridal-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.bridal-list li {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.96rem;
+  color: var(--text-mid);
+}
+
+/* Bearers */
+.bearers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bearer-card {
+  flex: 0 1 180px;
+  background: var(--ivory);
+  border: 1px solid var(--ivory-dark);
+  padding: 2rem 1.2rem;
+  text-align: center;
+  transition: var(--trans);
+}
+
+.bearer-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.bearer-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.bearer-role {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.bearer-desc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.bearer-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--teal-mid);
+  font-weight: 500;
+}
+
+/* Flower Girls */
+.flower-girls-wrap {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flower-girl {
+  text-align: center;
+}
+
+.flower-girl-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.flower-girl-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+/* Closing quote */
+.entourage-closing {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.entourage-closing-quote {
+  font-family: 'Pinyon Script', cursive;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--gold);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   DRESS CODE PAGE
+   ============================================================ */
+.dresscode-intro {
+  padding: 5rem 0 2rem;
+  background: var(--ivory);
+}
+
+.dresscode-section {
+  padding: 4rem 0;
+  background: var(--white);
+}
+
+.dresscode-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.dresscode-badge {
+  display: inline-block;
+  padding: 0.45rem 1.6rem;
+  background: var(--teal);
+  color: var(--ivory);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.dresscode-badge--soft {
+  background: var(--rose);
+}
+
+.dresscode-tagline {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.dresscode-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.dresscode-panel {
+  border: 1px solid var(--ivory-dark);
+  overflow: hidden;
+  transition: var(--trans);
+}
+
+.dresscode-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dresscode-panel:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+}
+
+.dresscode-panel-top {
+  background: var(--teal);
+  padding: 1.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dresscode-panel-top--soft {
+  background: var(--rose);
+}
+
+.dresscode-palette-strip {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.dc-swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.3);
+  transition: transform 0.2s;
+}
+
+.dc-swatch:hover {
+  transform: scale(1.12);
+}
+
+.dresscode-panel-body {
+  padding: 2rem 1.8rem;
+  text-align: center;
+  background: var(--white);
+}
+
+.dc-gender-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.dresscode-panel-body h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.dc-palette-names {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+.dc-attire-pill {
+  display: inline-block;
+  padding: 0.35rem 1.2rem;
+  background: var(--teal);
+  color: var(--ivory);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.dc-attire-pill--soft {
+  background: var(--rose);
+}
+
+.dc-note {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Divider strip between sections */
+.dresscode-divider-strip {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: var(--gold);
+  font-size: 1.3rem;
+  opacity: 0.5;
+  background: var(--ivory-dark);
+}
+
+/* Reminder */
+.dresscode-reminder {
+  padding: 2.5rem 0;
+  background: var(--ivory);
+}
+
+.dresscode-reminder-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.dresscode-reminder-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.dresscode-reminder-inner p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+}
+
+.dresscode-reminder-inner strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .sponsors-columns { grid-template-columns: 1fr; }
+  .sponsor-col-divider { display: none; }
+  .bridal-grid { grid-template-columns: 1fr; }
+  .bridal-divider { display: none; }
+  .parents-grid { flex-direction: column; gap: 2rem; }
+  .parent-divider { display: none; }
+  .dresscode-panels { grid-template-columns: 1fr; }
+  .secondary-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+}
+
 
 /* ============================================================
    RESPONSIVE

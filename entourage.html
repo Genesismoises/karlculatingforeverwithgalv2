@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entourage — Karl & Galilee</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music/wedding-music.mp3" type="audio/mpeg" />
+  </audio>
+  <button class="music-btn" id="musicBtn" title="Play music" aria-label="Toggle music">
+    <span class="music-icon">♫</span>
+    <span class="music-ripple"></span>
+  </button>
+
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">K <span>&</span> G</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="entourage.html" class="active">Entourage</a></li>
+      <li><a href="gifts.html">Gifts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="assets/images/cover/entourage.jpg" alt="Karl and Galilee" class="page-hero-img" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <p class="eyebrow light">Our People</p>
+      <h1>The Entourage</h1>
+    </div>
+  </section>
+
+  <!-- PARENTS -->
+  <section class="entourage-section">
+    <div class="container">
+
+      <div class="entourage-block reveal">
+        <div class="entourage-label">
+          <span class="entourage-icon">🌿</span>
+          <p class="eyebrow">The Families</p>
+          <h2>Parents</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="parents-grid">
+          <div class="parent-group reveal delay-1">
+            <p class="parent-tag">Parents of the Groom</p>
+            <p class="parent-name">Dominador E. Mila Jr.</p>
+            <p class="parent-name">Agnes S. Mila <span class="deceased">✞</span></p>
+          </div>
+          <div class="parent-divider">✦</div>
+          <div class="parent-group reveal delay-2">
+            <p class="parent-tag">Parents of the Bride</p>
+            <p class="parent-name">Carlo H. Baldonasa</p>
+            <p class="parent-name">Ederlina C. Baldonasa</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entourage-divider">✦</div>
+
+      <!-- PRINCIPAL SPONSORS -->
+      <div class="entourage-block reveal">
+        <div class="entourage-label">
+          <span class="entourage-icon">🕊️</span>
+          <p class="eyebrow">To Stand as Witness to Our Vows</p>
+          <h2>Principal Sponsors</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="sponsors-columns">
+          <div class="sponsor-col reveal delay-1">
+            <p class="sponsor-col-label">Gentlemen</p>
+            <ul class="sponsor-list">
+              <li>Leo Baldonasa</li>
+              <li>Noel Baldonasa</li>
+              <li>Bien Jonathan Fabellar</li>
+              <li>Russell Fazon</li>
+              <li>Manuel Gallegos</li>
+              <li>Hector Lim</li>
+              <li>Efren Grospe</li>
+              <li>Romy Paningbatan</li>
+              <li>Ferdinand Bayarong</li>
+              <li>Jesus Baldonasa Jr.</li>
+              <li>Reymond Carandang</li>
+            </ul>
+          </div>
+          <div class="sponsor-col-divider"></div>
+          <div class="sponsor-col reveal delay-2">
+            <p class="sponsor-col-label">Ladies</p>
+            <ul class="sponsor-list">
+              <li>Margie Baldonasa</li>
+              <li>Analiza Reyes</li>
+              <li>Hazel Anne Fabellar</li>
+              <li>Rhoda Fazon</li>
+              <li>Janeth Gallegos</li>
+              <li>Rhea Lim</li>
+              <li>Mary Jean Enriquez</li>
+              <li>Cecille Paningbatan</li>
+              <li>Dr. Madonna Chavez</li>
+              <li>Julie Pabroquez</li>
+              <li>Isabel Arbues</li>
+              <li>Evangeline Santos</li>
+              <li>Felicidad Conde</li>
+              <li>Annabelle Mila</li>
+              <li>Juby Bernal</li>
+              <li>Marietta Maneja</li>
+              <li>Ma. Lorena Murcia</li>
+              <li>Milagros Limbag</li>
+              <li>Elinore Taylon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="entourage-divider">✦</div>
+
+      <!-- SECONDARY SPONSORS -->
+      <div class="entourage-block reveal">
+        <div class="entourage-label">
+          <span class="entourage-icon">💫</span>
+          <p class="eyebrow">To Assist Us in Our Needs</p>
+          <h2>Secondary Sponsors</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="secondary-grid">
+          <div class="secondary-card reveal delay-1">
+            <p class="secondary-role">Best Man</p>
+            <p class="secondary-name">Fernando Edu Jr.</p>
+          </div>
+          <div class="secondary-card reveal delay-2">
+            <p class="secondary-role">Matron of Honor</p>
+            <p class="secondary-name">Gennezareth Baldonasa-Gomez</p>
+          </div>
+          <div class="secondary-card reveal delay-1">
+            <p class="secondary-role-symbol">🎀</p>
+            <p class="secondary-role">Cord — To Bind Us Together</p>
+            <p class="secondary-name">Reynan Relacion</p>
+            <p class="secondary-name">Normina Genesis</p>
+          </div>
+          <div class="secondary-card reveal delay-2">
+            <p class="secondary-role-symbol">🕊️</p>
+            <p class="secondary-role">Veil — To Clothe Us as One</p>
+            <p class="secondary-name">Wensie Villamidez</p>
+            <p class="secondary-name">Aiko Jean Carballo</p>
+          </div>
+          <div class="secondary-card reveal delay-3">
+            <p class="secondary-role-symbol">🕯️</p>
+            <p class="secondary-role">Candle — To Light Our Path</p>
+            <p class="secondary-name">Rob Gomez</p>
+            <p class="secondary-name">Daiserie Itang</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entourage-divider">✦</div>
+
+      <!-- BRIDAL PARTY -->
+      <div class="entourage-block reveal">
+        <div class="entourage-label">
+          <span class="entourage-icon">💐</span>
+          <p class="eyebrow">To Lead Us in Our Way</p>
+          <h2>Bridal Party</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="bridal-grid">
+          <div class="bridal-side reveal delay-1">
+            <p class="bridal-side-title">Groomsmen & Groomsmaids</p>
+            <ul class="bridal-list">
+              <li>Paul Eleazar Santos</li>
+              <li>John Brian Pambago</li>
+              <li>Angelo Mila</li>
+              <li>Jestoni Arcita</li>
+              <li>Paulo Divino Santos</li>
+              <li>Milagros May Lozano</li>
+              <li>Mary Angela Manahan</li>
+              <li>Bea Opeña</li>
+            </ul>
+          </div>
+          <div class="bridal-divider"></div>
+          <div class="bridal-side reveal delay-2">
+            <p class="bridal-side-title">Bridesmaids & Bridesmen</p>
+            <ul class="bridal-list">
+              <li>Daisy Rose Adolfo-Lugtu</li>
+              <li>Maria Bernadette Adolfo</li>
+              <li>Mary Rose Corpuz</li>
+              <li>Erika Baldonasa</li>
+              <li>April Doroja</li>
+              <li>Levie Sarmiento</li>
+              <li>Gilmar Calusor</li>
+              <li>Amiel Sto. Domingo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="entourage-divider">✦</div>
+
+      <!-- BEARERS & LITTLE ONES -->
+      <div class="entourage-block reveal">
+        <div class="entourage-label">
+          <span class="entourage-icon">🌟</span>
+          <p class="eyebrow">The Little Ones</p>
+          <h2>Bearers & Little Ones</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="bearers-grid">
+          <div class="bearer-card reveal delay-1">
+            <span class="bearer-emoji">💍</span>
+            <p class="bearer-role">Ring Bearer</p>
+            <p class="bearer-desc">To Carry Our Symbol of Love</p>
+            <p class="bearer-name">Genesis Moises Baldonasa</p>
+          </div>
+          <div class="bearer-card reveal delay-2">
+            <span class="bearer-emoji">🪙</span>
+            <p class="bearer-role">Coin Bearer</p>
+            <p class="bearer-desc">To Carry Our Symbol of Prosperity</p>
+            <p class="bearer-name">Edwin Baldonasa</p>
+          </div>
+          <div class="bearer-card reveal delay-3">
+            <span class="bearer-emoji">📖</span>
+            <p class="bearer-role">Bible Bearer</p>
+            <p class="bearer-desc">To Carry Our Symbol of Faith</p>
+            <p class="bearer-name">Austin Kurt Mercado</p>
+          </div>
+          <div class="bearer-card reveal delay-1">
+            <span class="bearer-emoji">🤵</span>
+            <p class="bearer-role">Little Groom</p>
+            <p class="bearer-name">Calyx Grei Paron</p>
+          </div>
+          <div class="bearer-card reveal delay-2">
+            <span class="bearer-emoji">👰</span>
+            <p class="bearer-role">Little Bride</p>
+            <p class="bearer-name">Mikaella Gomez</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entourage-divider">✦</div>
+
+      <!-- FLOWER GIRLS -->
+      <div class="entourage-block reveal">
+        <div class="entourage-label">
+          <span class="entourage-icon">🌸</span>
+          <p class="eyebrow">To Shower Our Aisle with Flowers</p>
+          <h2>Flower Girls</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="flower-girls-wrap">
+          <div class="flower-girl reveal delay-1">
+            <span class="flower-girl-icon">🌸</span>
+            <p class="flower-girl-name">Ma. Samantha Situbal</p>
+          </div>
+          <div class="flower-girl reveal delay-2">
+            <span class="flower-girl-icon">🌸</span>
+            <p class="flower-girl-name">Maria Jeulienne Pondare</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  
+  <!-- INTRO -->
+  <section class="dresscode-intro">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">What to Wear</p>
+        <h2>Dressing the Day</h2>
+        <div class="header-line"></div>
+        <p class="section-subtitle">We'd love for our guests to complement the warmth and elegance of our celebration. Below is a guide to help you dress beautifully for our special day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPAL SPONSORS DRESS CODE -->
+  <section class="dresscode-section dresscode-principals">
+    <div class="container">
+      <div class="dresscode-heading reveal">
+        <div class="dresscode-badge">Principal Sponsors</div>
+        <p class="dresscode-tagline">Our honored witnesses, dressed to stand with us</p>
+      </div>
+
+      <div class="dresscode-panels">
+        <!-- Gentlemen -->
+        <div class="dresscode-panel reveal delay-1">
+          <div class="dresscode-panel-top">
+            <div class="dresscode-palette-strip">
+              <div class="dc-swatch" style="background:#6B4A2A;" title="Coffee Brown"></div>
+              <div class="dc-swatch" style="background:#C5A882;" title="Beige"></div>
+              <div class="dc-swatch" style="background:#F5F0E8;" title="Cream"></div>
+            </div>
+          </div>
+          <div class="dresscode-panel-body">
+            <span class="dc-gender-icon">🤵</span>
+            <h3>Gentlemen</h3>
+            <div class="dc-palette-names">Coffee Brown · Beige · Cream</div>
+            <div class="dc-attire-pill">Barong Tagalog</div>
+            <p class="dc-note">A traditional and elegant choice that honors the spirit of a Filipino celebration.</p>
+          </div>
+        </div>
+
+        <!-- Ladies -->
+        <div class="dresscode-panel reveal delay-2">
+          <div class="dresscode-panel-top">
+            <div class="dresscode-palette-strip">
+              <div class="dc-swatch" style="background:#6B4A2A;" title="Coffee Brown"></div>
+              <div class="dc-swatch" style="background:#C5A882;" title="Beige"></div>
+              <div class="dc-swatch" style="background:#F5F0E8;" title="Cream"></div>
+            </div>
+          </div>
+          <div class="dresscode-panel-body">
+            <span class="dc-gender-icon">👗</span>
+            <h3>Ladies</h3>
+            <div class="dc-palette-names">Coffee Brown · Beige · Cream</div>
+            <div class="dc-attire-pill">Long Dress</div>
+            <p class="dc-note">Flowing gowns in warm earth tones that echo the grace of the ceremony.</p>
+          </div>
+        </div>
+
+        
+        
+      </div>
+
+      <div class="dresscode-img reveal delay-2">
+          <img src="assets/images/attire-principal.png" alt="">
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="dresscode-divider-strip">
+    <span>✦</span>
+  </div>
+
+  <!-- GUESTS DRESS CODE -->
+  <section class="dresscode-section dresscode-guests">
+    <div class="container">
+      <div class="dresscode-heading reveal">
+        <div class="dresscode-badge dresscode-badge--soft">Guests</div>
+        <p class="dresscode-tagline">Celebrate with us in soft, joyful hues</p>
+      </div>
+
+      <div class="dresscode-panels">
+        <!-- Gentlemen -->
+        <div class="dresscode-panel reveal delay-1">
+          <div class="dresscode-panel-top dresscode-panel-top--soft">
+            <div class="dresscode-palette-strip">
+              <div class="dc-swatch" style="background:#E8C4B8;" title="Blush"></div>
+              <div class="dc-swatch" style="background:#8FAF8A;" title="Sage"></div>
+              <div class="dc-swatch" style="background:#E3D5C4;" title="Nude"></div>
+            </div>
+          </div>
+          <div class="dresscode-panel-body">
+            <span class="dc-gender-icon">🤵</span>
+            <h3>Gentlemen</h3>
+            <div class="dc-palette-names">Blush · Sage · Nude Tones</div>
+            <div class="dc-attire-pill dc-attire-pill--soft">Semi-Formal</div>
+            <p class="dc-note">Slacks, polo, or barong in gentle, muted tones. Keep it polished and comfortable.</p>
+          </div>
+        </div>
+
+        <!-- Ladies -->
+        <div class="dresscode-panel reveal delay-2">
+          <div class="dresscode-panel-top dresscode-panel-top--soft">
+            <div class="dresscode-palette-strip">
+              <div class="dc-swatch" style="background:#E8C4B8;" title="Blush"></div>
+              <div class="dc-swatch" style="background:#8FAF8A;" title="Sage"></div>
+              <div class="dc-swatch" style="background:#E3D5C4;" title="Nude"></div>
+            </div>
+          </div>
+          <div class="dresscode-panel-body">
+            <span class="dc-gender-icon">👒</span>
+            <h3>Ladies</h3>
+            <div class="dc-palette-names">Blush · Sage · Nude Tones</div>
+            <div class="dc-attire-pill dc-attire-pill--soft">Semi-Formal</div>
+            <p class="dc-note">Midi dresses, skirts, or smart ensembles in soft, romantic shades.</p>
+          </div>
+        </div>
+      </div>
+
+           <div class="dresscode-img reveal delay-2">
+          <img src="assets/images/attire-guests.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- REMINDER STRIP -->
+  <section class="dresscode-reminder reveal">
+    <div class="container">
+      <div class="dresscode-reminder-inner">
+        <span class="dresscode-reminder-icon">🚫</span>
+        <p>Please avoid wearing <strong>white, ivory, or red</strong> — these are reserved for the bridal party and ceremony.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- RSVP CTA -->
+  <section class="rsvp-cta">
+    <div class="rsvp-cta-bg">
+      <img src="assets/images/cover/main-bottom.jpg" alt="" class="rsvp-cta-img" />
+      <div class="rsvp-cta-overlay"></div>
+    </div>
+    <div class="rsvp-cta-content reveal">
+      <p class="eyebrow lightx">Join Our Celebration</p>
+      <h2>Will You Be There?</h2>
+      <p>Your presence means the world to us. Please let us know by <strong>March 31, 2026</strong>.</p>
+      <a href="rsvp.html" class="btn-primary">RSVP Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-names">Karl <span>&amp;</span> Galilee</p>
+      <p class="footer-date">May 14, 2026 · Tagaytay, Cavite</p>
+      <div class="footer-divider">✦</div>
+      <div class="footer-links">
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="entourage.html">Entourage</a>
+        <a href="dresscode.html">Dress Code</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!--<p class="footer-copy">Made with love &hearts; for our special day</p>-->
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
